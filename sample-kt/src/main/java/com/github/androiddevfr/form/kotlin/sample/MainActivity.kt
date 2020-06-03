@@ -6,6 +6,7 @@ import android.util.Log
 import com.github.androiddevfr.form.Form
 import com.github.androiddevfr.form.rows.DateRow
 import com.github.androiddevfr.form.rows.TextRow
+import com.github.androiddevfr.form.rows.ToggleRow
 import kotlinx.android.synthetic.main.activity_main.getValues
 import java.util.Date
 
@@ -76,6 +77,15 @@ class MainActivity : AppCompatActivity() {
                     title = "Slider row"
                     maxValue = 42
                     value = 33
+                }
+            }
+            section("Section 4") {
+                id = 7
+                toggleRow {
+                    id = 8
+                    title = "Toggle row"
+                    textOff = "Off"
+                    textOn = "On"
                 }
             }
         }
