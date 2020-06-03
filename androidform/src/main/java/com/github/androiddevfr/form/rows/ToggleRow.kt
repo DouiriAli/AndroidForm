@@ -21,13 +21,13 @@ class ToggleRow(context: Context): AbstractTitleRow<Boolean>(context) {
         onCreateView<ToggleRow> {
             val layout = RelativeLayout(context)
 
-            //Generated the Slider
+            //Generated the Toggle
             createToggle()
             val toggleLayoutParams = RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
-            toggleLayoutParams.leftMargin = DimensionUtils.dpToPx(AbstractTitleRow.DEFAULT_MARGIN_LEFT)
-            toggleLayoutParams.topMargin = DimensionUtils.dpToPx(AbstractTitleRow.DEFAULT_MARGIN_TOP)
-            toggleLayoutParams.bottomMargin = DimensionUtils.dpToPx(AbstractTitleRow.DEFAULT_MARGIN_BOTTOM)
-            toggleLayoutParams.rightMargin = DimensionUtils.dpToPx(AbstractTitleRow.DEFAULT_MARGIN_RIGHT)
+            toggleLayoutParams.leftMargin = DimensionUtils.dpToPx(DEFAULT_MARGIN_LEFT)
+            toggleLayoutParams.topMargin = DimensionUtils.dpToPx(DEFAULT_MARGIN_TOP)
+            toggleLayoutParams.bottomMargin = DimensionUtils.dpToPx(DEFAULT_MARGIN_BOTTOM)
+            toggleLayoutParams.rightMargin = DimensionUtils.dpToPx(DEFAULT_MARGIN_RIGHT)
             toggleLayoutParams.addRule(RelativeLayout.CENTER_VERTICAL)
             toggleLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT)
             toggleView?.layoutParams = toggleLayoutParams
@@ -37,10 +37,10 @@ class ToggleRow(context: Context): AbstractTitleRow<Boolean>(context) {
             //Generated the Title
             createTitleView(TITLE_VIEW_ID)
             val titleLayoutParams = RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
-            titleLayoutParams.leftMargin = DimensionUtils.dpToPx(AbstractTitleRow.DEFAULT_MARGIN_LEFT)
-            titleLayoutParams.topMargin = DimensionUtils.dpToPx(AbstractTitleRow.DEFAULT_MARGIN_TOP)
-            titleLayoutParams.bottomMargin = DimensionUtils.dpToPx(AbstractTitleRow.DEFAULT_MARGIN_BOTTOM)
-            titleLayoutParams.rightMargin = DimensionUtils.dpToPx(AbstractTitleRow.DEFAULT_MARGIN_RIGHT)
+            titleLayoutParams.leftMargin = DimensionUtils.dpToPx(DEFAULT_MARGIN_LEFT)
+            titleLayoutParams.topMargin = DimensionUtils.dpToPx(DEFAULT_MARGIN_TOP)
+            titleLayoutParams.bottomMargin = DimensionUtils.dpToPx(DEFAULT_MARGIN_BOTTOM)
+            titleLayoutParams.rightMargin = DimensionUtils.dpToPx(DEFAULT_MARGIN_RIGHT)
             titleLayoutParams.addRule(RelativeLayout.CENTER_VERTICAL)
             titleLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT)
             titleView?.layoutParams = titleLayoutParams
