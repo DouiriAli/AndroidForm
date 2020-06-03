@@ -78,6 +78,14 @@ class MainActivity : AppCompatActivity() {
                     value = 33
                 }
             }
+
+            section("Section 4") {
+                id = 8
+                switchRow {
+                    id = 9
+                    title = "Switch row"
+                }
+            }
         }
 
         getValues.setOnClickListener {

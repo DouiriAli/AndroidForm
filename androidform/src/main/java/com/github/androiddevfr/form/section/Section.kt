@@ -104,6 +104,19 @@ class Section(private val context: Context, var title: String) {
     }
 
     /**
+     * Add a row with title and a Switch
+     *
+     * ----------------------------------------
+     * |                                      |
+     * | TITLE               Switch (On/Off)  |
+     * |                                      |
+     * ----------------------------------------
+     */
+    fun switchRow(block: (SwitchRow.() -> Unit)): Section {
+        return row(SwitchRow(context), block)
+    }
+
+    /**
      * Add a single/multi choice row)
      *
      * ----------------------------------------
